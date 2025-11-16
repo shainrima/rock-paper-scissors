@@ -33,8 +33,8 @@ let score = JSON.parse(localStorage.getItem('score'));
         updateScoreElement();
 
         document.querySelector(".js-verdict").innerHTML = `
-          You: <img src="${playerMove}-emoji.png" class="move-icon">
-          <img src="${move}-emoji.png" class="move-icon"> :Computer
+          You: <img src="images/${playerMove}-emoji.png" class="move-icon">
+          <img src="images/${move}-emoji.png" class="move-icon"> :Computer
           <br><br>
           Result: ${result.toUpperCase()}
         `;
